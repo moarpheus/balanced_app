@@ -21,9 +21,11 @@ resource "aws_vpc" "main" {
 resource "aws_subnet" "subnet1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet1
+  availability_zone = data.aws_availability_zones.available.names[0]
 }
 
 resource "aws_subnet" "subnet2" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet2
+  availability_zone = data.aws_availability_zones.available.names[1]
 }
