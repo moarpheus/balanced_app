@@ -29,3 +29,15 @@ resource "aws_subnet" "subnet2" {
   cidr_block = var.subnet2
   availability_zone = data.aws_availability_zones.available.names[1]
 }
+
+resource "aws_instance" "web1" {
+    subnet_id = ""
+    instance_type = ""
+    ami = ""
+}
+
+resource "aws_instance" "web2" {
+    subnet_id = ""
+    instance_type = ""
+    ami = ""
+}
