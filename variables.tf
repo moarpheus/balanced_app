@@ -15,3 +15,14 @@ variable "vpc_cidr_block" {
   description = "Base CIDR Block for VPC"
   default     = "10.0.0.0/16"
 }
+
+variable "subnet1" {
+  type = string
+  description = "Subnet 1"
+}
+
+
+variable "subnet2" {
+  type = string
+  description = "Subnet 2"
+}
